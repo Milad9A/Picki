@@ -40,7 +40,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
           Text(
             'Picki',
             style: TextStyle(
-              fontSize: 60,
+              fontSize: 60.0,
               fontWeight: FontWeight.bold,
             ),
           ),
