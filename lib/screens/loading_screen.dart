@@ -1,7 +1,9 @@
-import 'package:flutter/material.dart';
-import 'picking_screen.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'dart:async';
+
+import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+
+import 'picking_screen.dart';
 
 class LoadingScreen extends StatefulWidget {
   @override
@@ -16,7 +18,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
   }
 
   startTime() async {
-    var duration = new Duration(seconds: 5);
+    var duration = new Duration(seconds: 1);
     return new Timer(duration, route);
   }
 
@@ -25,7 +27,9 @@ class _LoadingScreenState extends State<LoadingScreen> {
       context,
       MaterialPageRoute(
         builder: (context) {
-          return PickingScreen(teamNumber: 1);
+          return PickingScreen(
+            screenNumber: 1,
+          );
         },
       ),
     );
