@@ -25,7 +25,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
       context,
       MaterialPageRoute(
         builder: (context) {
-          return PickingScreen();
+          return PickingScreen(teamNumber: 1);
         },
       ),
     );
