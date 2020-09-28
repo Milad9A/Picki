@@ -38,6 +38,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Theme.of(context).primaryColor,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
@@ -46,6 +47,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
             style: TextStyle(
               fontSize: 60.0,
               fontWeight: FontWeight.bold,
+              color: Color(0xFF00BCD4),
             ),
           ),
           SizedBox(
